@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+        
+        caption {
+            padding: 10px;
+        } /* LEGENDA */
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        } /* CABEÇALHO FIXO */
+
+        .num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        } /* 
+        EFEITO ZEBRADO
+            nth-child(even) 
+            nth-child(odd) 
+        */
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.963</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num"><strong>xxx.xxx.xxx</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sit enim incidunt rerum? Eum mollitia eos vitae qui quaerat cupiditate nostrum vel, asperiores a natus officia laudantium in voluptate libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minima corrupti fugiat. Minima nobis unde perspiciatis fugit dignissimos ipsum quis deleniti, sed vero animi quae? Natus nemo tenetur modi molestiae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus earum, fugiat sint illo animi necessitatibus iste iure officiis magni, at perspiciatis repellendus atque, recusandae soluta quibusdam quis? Asperiores, deleniti ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, incidunt. Praesentium, doloremque? Sapiente earum minima corrupti laboriosam et perferendis hic, labore cupiditate culpa harum excepturi ipsa veniam nemo! Labore, quae.</p>
+</body>
+</html>
